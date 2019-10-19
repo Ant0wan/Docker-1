@@ -8,11 +8,7 @@ This project aims to learn the very basics of using Docker.
 
 ## Requirements
 
-- Docker (1.12 minimum):
-
-```shell=
-sudo apt-get install -y docker
-```
+OS: Debian or MacOS
 
 ## Usage
 
@@ -20,4 +16,12 @@ sudo apt-get install -y docker
 
 ```shell=
 git clone https://github.com/Ant0wan/Docker-1 && cd Docker-1/
+```
+
+If you are using Debian (amd64):
+
+- Run script to install Docker
+
+```shell=
+bash --posix 02_bonus/install_docker_Debian.sh
 ```
