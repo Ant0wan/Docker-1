@@ -26,7 +26,7 @@ function install_docker ()
 function list_available_versions ()
 {
 	printf "List available versions in repo\n"
-	docker --version
+	docker-machine --version
 }
 
 function launch_setup ()
