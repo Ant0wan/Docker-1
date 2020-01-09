@@ -1,2 +1,1 @@
-# https://docs.docker.com/machine/reference/create/
 docker-machine create --driver virtualbox Char

@@ -1,2 +1,1 @@
-#Pull hello-wolrd image
 docker pull hello-world

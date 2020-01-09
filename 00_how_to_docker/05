@@ -1,2 +1,1 @@
-#Run a container with hello-world image
 docker run hello-world
