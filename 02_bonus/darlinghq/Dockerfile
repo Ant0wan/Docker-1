@@ -33,4 +33,4 @@ RUN apt-get update && apt-get install -y \
  && make lkm \
  && sudo make lkm_install
 
-ENTRYPOINT darling shell
+ENTRYPOINT ["darling shell"]
