@@ -16,6 +16,14 @@ Introduction to the Docker main options: containers, swarms and services.
 
 Introduction to Dockerfile building containers for applications.
 
+`ex00` vim container
+
+`ex01` teamspeak server container
+
+`ex02`
+
+`ex03`
+
 #### 02_bonus
 
 `install_docker_Debian.sh` script installing Docker on Debian10.
