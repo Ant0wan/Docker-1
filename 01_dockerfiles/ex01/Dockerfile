@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y wget bzip2 \
     && rm teamspeak3-server_linux_amd64-3.10.2.tar.bz2 \
     && cd teamspeak3-server_linux_amd64 \
     && touch .ts3server_license_accepted
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR teamspeak3-server_linux_amd64
 
