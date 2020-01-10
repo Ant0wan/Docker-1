@@ -4,17 +4,31 @@ An introduction to **Docker** [a 42 project].
 
 This project aims to learn the very basics of using Docker and Docker-machine.
 
+---
+
 ## Description
 
 #### 00_how_to_docker
 
-Introduction to the Docker main options.
+Introduction to the Docker main options: containers, swarms and services.
+
+#### 01_dockerfiles
+
+Introduction to Dockerfile building containers for applications.
+
+#### 02_bonus
+
+
+
+---
 
 ## Requirements
 
 - OS: Debian or MacOS
 
 - Install docker, docker-machine and virtualbox.
+
+---
 
 ## Usage
 
