@@ -1,0 +1,2 @@
+#!/bin/bash
+for ID in $(docker service ls --quiet) ; do docker service rm $ID ; done
