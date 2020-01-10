@@ -1,6 +1,6 @@
 FROM debian
 
-MAINTAINER abarthel <abarthel@student.42.fr>
+LABEL maintainer "abarthel <abarthel@student.42.fr>"
 
 ENV TS_SHA256=d4262f0d51e682c0c645b36c196ad32dae99a1345420cfad00d52f2af109870d
 
