@@ -1,0 +1,10 @@
+FROM debian
+
+MAINTAINER abarthel <abarthel@student.42.fr>
+
+RUN 
+
+# https://files.teamspeak-services.com/releases/server/3.10.2/teamspeak3-server_linux_amd64-3.10.2.tar.bz2
+# SHA256: d4262f0d51e682c0c645b36c196ad32dae99a1345420cfad00d52f2af109870d
+
+ENTRYPOINT

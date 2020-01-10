@@ -1,4 +1,0 @@
-Build a Debian container and then install Darling
-https://wiki.darlinghq.org/installing_software
-Add Xcode to the image and try to clone and compile few projects.
-Implement the container with Kubernetes for 42 project CI.
