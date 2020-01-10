@@ -18,7 +18,9 @@ Introduction to Dockerfile building containers for applications.
 
 #### 02_bonus
 
+`install_docker_Debian.sh` script installing Docker on Debian10.
 
+`install_docker-machine_MacOS.sh` script installing Docker-machine on MacOS.
 
 ---
 
