@@ -1,0 +1,3 @@
+#!/bin/bash
+# docker rmi $(docker images --all --quiet)
+for ID in $(docker images --all --quiet); do docker rmi $ID ; done
