@@ -30,6 +30,8 @@ Introduction to Dockerfile building containers for applications.
 
 `install_docker-machine_MacOS.sh` script installing Docker-machine on MacOS.
 
+`darlinghq` darlinghq dockerfile for compiling and executing macos binaries.
+
 ---
 
 ## Requirements
