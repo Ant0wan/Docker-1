@@ -1,0 +1,2 @@
+#!/bin/bash
+for ID in $(docker service ps engineering-bay --filter "name=engineering-bay.1" --quiet) ; do docker service logs $ID ; done
