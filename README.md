@@ -20,9 +20,9 @@ Introduction to Dockerfile building containers for applications.
 
 `ex01` teamspeak server container
 
-`ex02`
+`ex02` ruby on rail app container
 
-`ex03`
+`ex03` gitlab-ce container
 
 #### 02_bonus
 
@@ -31,6 +31,14 @@ Introduction to Dockerfile building containers for applications.
 `install_docker-machine_MacOS.sh` script installing Docker-machine on MacOS.
 
 `darlinghq` darlinghq dockerfile for compiling and executing macos binaries.
+
+`go` go dockerfile for writing, compiling and running go programs.
+
+`gcc` gcc dockerfile for compiling C programs.
+
+`debdev` debian buster dockerfile for coding C in a debian environment.
+
+`termcaps` termcaps dockerfile for testing C programs using termcaps.
 
 ---
 
