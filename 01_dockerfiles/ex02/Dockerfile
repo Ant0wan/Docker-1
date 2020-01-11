@@ -4,7 +4,10 @@ LABEL maintainer "abarthel <abarthel@student.42.fr>"
 
 RUN apt-get update -y && apt-get install -y \
 	sqlite3 \
-	libsqlite3-dev
+	libsqlite3-dev \
+	gem \
+	bundler \
+	rails
 
 ONBUILD RUN gem install rails bundler
 
