@@ -15,8 +15,9 @@ RUN curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/s
 
 RUN apt-get install -y gitlab-ce
 
-RUN letsencrypt certonly -d $FQDN \
- && mkdir -p /etc/gitlab/ssl/ \
+RUN letsencrypt certonly -d $FQDN
+
+RUN mkdir -p /etc/gitlab/ssl/ \
  && openssl dhparam -out /etc/gitlab/ssl/dhparams.pem 2048 \
  && chmod 600 /etc/gitlab/ssl/*
 
