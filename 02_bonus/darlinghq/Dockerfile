@@ -22,15 +22,26 @@ RUN apt-get update && apt-get install -y \
 	libxml2-dev \
 	libegl1-mesa-dev \
 	libfontconfig1-dev \
-	libbsd-dev \
- && git clone --recursive https://github.com/darlinghq/darling.git \
- && cd darling \
- && mkdir build \
- && cd build \
- && cmake .. \
- && make \
- && make install \
- && make lkm \
- && sudo make lkm_install
+	libbsd-dev
+
+RUN git clone --recursive https://github.com/darlinghq/darling.git
+
+WORKDIR darling
+
+RUN mkdir build
+
+WORKDIR build
+
+RUN cmake ..
+
+RUN make
+
+RUN make install 
+
+RUN make lkm
+
+RUN make lkm_install
+
+WORKDIR ~/
 
 ENTRYPOINT ["darling shell"]
