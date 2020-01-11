@@ -6,7 +6,7 @@ RUN apt-get update -y && apt-get install -y \
 	sqlite3 \
 	libsqlite3-dev
 
-RUN gem install rails bundler
+ONBUILD RUN gem install rails bundler
 
 ONBUILD COPY app /opt/app
 
