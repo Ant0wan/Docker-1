@@ -17,9 +17,11 @@ RUN apt-get install -y gitlab-ce
 
 RUN letsencrypt certonly -d $FQDN
 
-RUN mkdir -p /etc/gitlab/ssl/ \
- && openssl dhparam -out /etc/gitlab/ssl/dhparams.pem 2048 \
- && chmod 600 /etc/gitlab/ssl/*
+RUN mkdir -p /etc/gitlab/ssl/
+
+RUN openssl dhparam -out /etc/gitlab/ssl/dhparams.pem 2048
+
+RUN chmod 600 /etc/gitlab/ssl/*
 
 RUN echo -e "external_url 'https://$FQDN'\n" "nginx['redirect_http_to_https'] = true\n" "nginx['ssl_certificate'] = '/etc/letsencrypt/live/gitlab.hakase-labs.co/fullchain.pem'\n" "nginx['ssl_certificate_key'] = '/etc/letsencrypt/live/gitlab.hakase-labs.co/privkey.pem'\n" "nginx['ssl_dhparam'] = '/etc/gitlab/ssl/dhparams.pem'" >> /etc/gitlab/gitlab.rb
 
