@@ -34,9 +34,9 @@ WORKDIR build
 
 RUN cmake ..
 
-RUN make
+RUN make -j$(getconf _NPROCESSORS_ONLN)
 
-RUN make install 
+RUN make install
 
 RUN make lkm
 
