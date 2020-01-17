@@ -1,8 +1,10 @@
-FROM ubuntu
+FROM ubuntu:18.04
 
 LABEL maintainer "abarthel <abarthel@student.42.fr>"
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update
+
+RUN apt install -y \
 	cmake \
 	clang \
 	bison \
