@@ -34,7 +34,10 @@ RUN mkdir build
 
 WORKDIR build
 
-RUN cmake ..
+# Test the build of DarlingHQ
+#RUN cmake -DFULL_BUILD=OFF .. 
+
+RUN cmake -DFULL_BUILD=OFF ..
 
 RUN make -j$(getconf _NPROCESSORS_ONLN)
 
@@ -46,4 +49,4 @@ RUN make lkm_install
 
 WORKDIR ~/
 
-ENTRYPOINT ["darling shell"]
+ENTRYPOINT ["/usr/local/bin/darling", "shell"]
