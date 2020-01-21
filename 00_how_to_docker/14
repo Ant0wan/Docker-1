@@ -1,2 +1,2 @@
 docker pull wordpress
-docker run --detach --name lair --publish 80:8080 --link spawning-pool:mysql wordpress
+docker run --detach --name lair --publish 8080:80 --link spawning-pool:mysql wordpress
