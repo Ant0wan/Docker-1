@@ -2,18 +2,18 @@ FROM ruby:2.5
 
 LABEL maintainer "abarthel <abarthel@student.42.fr>"
 
-RUN apt-get update -y && apt-get install -y \
-	sqlite3 \
-	libsqlite3-dev
+RUN apt-get update && apt-get install -y \
+	nodejs \
+	postgresql-client
 
-#ONBUILD RUN gem install rails bundler
-
-ONBUILD COPY app /opt/app
+ONBUILD COPY ./ft-rails/app /opt/app
 
 ONBUILD WORKDIR /opt/app
 
 ONBUILD RUN bundle install
 
-ONBUILD RUN rake db:migrate
+ONBUILD EXPOSE 3000
 
-ONBUILD RUN rake db:seed
+#ONBUILD RUN rake db:migrate
+
+#ONBUILD RUN rake db:seed
