@@ -4,7 +4,7 @@ printf 'from flask import Flask
 app = Flask(__name__)
 @app.route("/")
 def hello():
-    return "<h1>Hello World!<\\h1>"' > $HOME/hello-world.py
+    return "<h1>Hello World!"' > $HOME/hello-world.py
 docker run --detach --tty --interactive --name Abathur --volume $HOME:/root --publish 3000:3000 python:2-slim
 docker exec Abathur pip install Flask
 docker exec --env FLASK_APP=/root/hello-world.py Abathur flask run --host=$(docker inspect --format='{{(index (index .NetworkSettings.Ports "3000/tcp") 0).HostIp}}' Abathur) --port 3000
