@@ -1,19 +1,5 @@
-FROM ruby
+FROM ft-rails:on-build
 
-LABEL maintainer "abarthel <abarthel@student.42.fr>"
+EXPOSE 3000
 
-RUN apt-get update -y && apt-get install -y \
-	sqlite3 \
-	libsqlite3-dev
-
-ONBUILD RUN gem install rails bundler
-
-ONBUILD COPY app /opt/app
-
-ONBUILD WORKDIR /opt/app
-
-ONBUILD RUN bundle install
-
-ONBUILD RUN rake db:migrate
-
-ONBUILD RUN rake db:seed
+CMD ["rails", "s", "-b", "0.0.0.0", "-p", "3000"]
