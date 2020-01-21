@@ -13,9 +13,3 @@ RUN mkdir /root/vim
 WORKDIR /root/vim
 
 ENTRYPOINT ["vim"]
-
-# Display an entry menu when container start
-# Comment ENTRYPOINT and uncomment CMD
-#CMD ["vim", ""]
-
-#docker run -it --rm -v $PWD:/root myvim:0 hello-world.c
