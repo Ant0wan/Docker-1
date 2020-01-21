@@ -36,10 +36,6 @@ Introduction to Dockerfile building containers for applications.
 
 `gcc` gcc dockerfile for compiling C programs.
 
-`debdev` debian buster dockerfile for coding C in a debian environment.
-
-`termcaps` termcaps dockerfile for testing C programs using termcaps.
-
 ---
 
 ## Requirements
