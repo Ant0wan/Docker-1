@@ -1,10 +1,12 @@
 #!/bin/sh
-sudo docker run --detach \
+#mkdir gitlab
+#cd gitlab && mkdir config && mkdir logs && mkdir data
+docker run --detach --rm \
   --hostname gitlab.example.com \
   --publish 443:443 --publish 80:80 --publish 22:22 \
   --name gitlab \
   --restart always \
-  --volume /srv/gitlab/config:/etc/gitlab \
-  --volume /srv/gitlab/logs:/var/log/gitlab \
-  --volume /srv/gitlab/data:/var/opt/gitlab \
+  --volume ./gitlab/config:/etc/gitlab \
+  --volume ./gitlab/logs:/var/log/gitlab \
+  --volume ./gitlab/data:/var/opt/gitlab \
   gitlab/gitlab-ce:latest
