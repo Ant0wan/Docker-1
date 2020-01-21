@@ -1,4 +1,4 @@
-FROM ruby:2.5
+FROM ruby:2.5.5
 
 LABEL maintainer "abarthel <abarthel@student.42.fr>"
 
@@ -6,13 +6,19 @@ RUN apt-get update && apt-get install -y \
 	nodejs \
 	postgresql-client
 
-ONBUILD COPY ./ft-rails/app /opt/app
+COPY ./app /opt/app
 
-ONBUILD WORKDIR /opt/app
+WORKDIR /opt/app
 
-ONBUILD RUN bundle install
+RUN gem install bundler
+
+RUN bundle install
+
+#RUN gem install rails
 
 ONBUILD EXPOSE 3000
+
+ENTRYPOINT ["/bin/sh"]
 
 #ONBUILD RUN rake db:migrate
 
