@@ -1,4 +1,4 @@
-FROM ruby
+FROM ruby:2.5
 
 LABEL maintainer "abarthel <abarthel@student.42.fr>"
 
@@ -6,7 +6,7 @@ RUN apt-get update -y && apt-get install -y \
 	sqlite3 \
 	libsqlite3-dev
 
-ONBUILD RUN gem install rails bundler
+#ONBUILD RUN gem install rails bundler
 
 ONBUILD COPY app /opt/app
 
