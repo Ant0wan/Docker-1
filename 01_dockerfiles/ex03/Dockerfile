@@ -4,7 +4,7 @@ LABEL maintainer "abarthel <abarthel@student.42.fr>"
 
 #USER root // seems useless
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install \
+RUN apt-get update && apt-get install -y \
 	curl \
 	openssh-server \
 	postfix \
@@ -20,9 +20,9 @@ ENV SKIP_POST_DEPLOYMENT_MIGRATIONS=true
 RUN apt-get install gitlab-ce
 
 
-RUN echo "package['detect_init'] = false
-unicorn['worker_timeout'] = 300
-postgresql['shared_buffers'] = '1MB'" >> /opt/gitlab/gitlab.rb
+RUN echo "package['detect_init'] = false"\
+"unicorn['worker_timeout'] = 300"\
+"postgresql['shared_buffers'] = '1MB'" >> /opt/gitlab/gitlab.rb
 
 EXPOSE 443 80 22
 

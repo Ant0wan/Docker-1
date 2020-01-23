@@ -1,4 +1,5 @@
 #!/bin/sh
+docker build -t gl:0 .
 #mkdir gitlab
 #cd gitlab && mkdir config && mkdir logs && mkdir data
 #docker run --detach --rm \
@@ -12,4 +13,4 @@
 #  gitlab/gitlab-ce:latest
 # --privileged
 
-docker run --rm --privileged gl:0 .
+#docker run --rm --privileged gl:0 .

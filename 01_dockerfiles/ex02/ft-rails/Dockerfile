@@ -1,25 +1,28 @@
-FROM ruby:2.5.5
+FROM ruby:latest
 
 LABEL maintainer "abarthel <abarthel@student.42.fr>"
 
 RUN apt-get update && apt-get install -y \
+	sqlite3 \
 	nodejs \
-	postgresql-client
+	yarn \
+	git 
+# && rm -rf /var/lib/apt/lists/*
 
-COPY ./app /opt/app
+RUN gem install rails
 
-WORKDIR /opt/app
+#RUN gem install yarn
+#RUN gem install git
+#RUN gem update
 
-RUN gem install bundler
+#COPY ./app /opt/app
 
-RUN bundle install
+#WORKDIR /opt/app
 
-#RUN gem install rails
+#RUN gem install bundler
+#RUN bundle install
 
 ONBUILD EXPOSE 3000
 
-ENTRYPOINT ["/bin/sh"]
-
-#ONBUILD RUN rake db:migrate
-
-#ONBUILD RUN rake db:seed
+#ONBUILD CMD ["rake", "db:migrate"]
+#ONBUILD CMD ["rake", "db:seed"]
