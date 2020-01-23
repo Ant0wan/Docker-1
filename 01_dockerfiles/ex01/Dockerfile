@@ -23,4 +23,6 @@ WORKDIR /teamspeak3-server_linux_amd64
 
 RUN touch .ts3server_license_accepted
 
+EXPOSE 9987/udp 10011 30033
+
 ENTRYPOINT ["/bin/sh", "ts3server_minimal_runscript.sh"]
