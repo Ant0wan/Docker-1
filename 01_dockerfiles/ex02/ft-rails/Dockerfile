@@ -11,7 +11,7 @@ RUN gem install rails -v 5.2.3
 
 RUN mkdir /opt/app
 
-COPY ./ft-rails /opt/app
+COPY ./app /opt/app
 
 ONBUILD WORKDIR /opt/app
 
