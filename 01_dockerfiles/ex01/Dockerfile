@@ -17,7 +17,7 @@ RUN wget https://files.teamspeak-services.com/releases/server/${TS_VERSION}/team
 
 RUN if [ "$(sha256sum teamspeak3-server_linux_amd64-${TS_VERSION}.tar.bz2 | cut -d ' ' -f1)" = "$TS_SHA256" ] ; then tar -xvf teamspeak3-server_linux_amd64-${TS_VERSION}.tar.bz2; else exit 42 ; fi
 
-RUN rm teamspeak3-server_linux_amd64-3.10.2.tar.bz2
+RUN rm teamspeak3-server_linux_amd64-${TS_VERSION}.tar.bz2
 
 WORKDIR /teamspeak3-server_linux_amd64
 
