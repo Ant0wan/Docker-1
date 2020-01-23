@@ -5,25 +5,15 @@ LABEL maintainer "abarthel <abarthel@student.42.fr>"
 RUN apt-get update && apt-get install -y \
 	sqlite3 \
 	nodejs \
-	yarn \
-	git 
-# && rm -rf /var/lib/apt/lists/*
+	yarn
 
-
-#RUN gem install rails
 RUN gem install rails -v 5.2.3
 
-# curl -o- -L https://yarnpkg.com/install.sh | bash
-#RUN gem install yarn
-#RUN gem install git
-#RUN gem update
+RUN mkdir /opt/app
 
-#COPY ./app /opt/app
+COPY ./ft-rails /opt/app
 
-#WORKDIR /opt/app
-
-#RUN gem install bundler
-#RUN bundle install
+ONBUILD WORKDIR /opt/app
 
 ONBUILD EXPOSE 3000
 
