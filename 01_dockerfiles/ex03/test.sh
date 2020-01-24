@@ -1,7 +1,7 @@
 #!/bin/sh
 #docker run --rm -it --name gitlab --privileged ubuntu:bionic
 docker build -t mygitlab:0 .
-docker run --detach \
+docker run -it \
   --privileged \
   --hostname gitlab.example.com \
   --publish 443:443 --publish 80:80 --publish 22:22 \
@@ -11,4 +11,3 @@ docker run --detach \
   --volume $PWD/gitlab/logs:/var/log/gitlab \
   --volume $PWD/gitlab/data:/var/opt/gitlab \
   mygitlab:0
-#  gitlab/gitlab-ce:latest

@@ -22,4 +22,4 @@ RUN apt-get install gitlab-ce
 
 EXPOSE 443 80 22
 
-ENTRYPOINT ["/opt/gitlab/embedded/bin/runsvdir-start", "&", "gitlab-ctl", "reconfigure"]
+ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure && tail -f /dev/null
