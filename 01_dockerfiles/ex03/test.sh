@@ -8,7 +8,7 @@
 #docker run --rm -it --name gitlab --privileged ubuntu:bionic
 #docker run --rm -it --name gitlab -p 443:443 -p 80:80 -p 22:22 --privileged ubuntu:bionic
 
-#docker build -t gl:0 .
+docker build -t gl:0 .
 #docker run --detach --rm \
 #  --privileged \
 #  --hostname gitlab.example.com \

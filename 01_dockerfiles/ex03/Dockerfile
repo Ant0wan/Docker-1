@@ -7,6 +7,7 @@ RUN apt-get update -q \
 	curl \
 	openssh-server \
 	tzdata \
+	gnupg \
 	ca-certificates \
  && rm -rf /var/lib/apt/lists/*
 
