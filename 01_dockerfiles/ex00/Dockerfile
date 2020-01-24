@@ -1,3 +1,9 @@
+# Build:
+#	docker build -t myvim:0 .
+#
+# Usage:
+#	docker run -it --rm -v $PWD:/root/vim myvim:0 hello-world.c
+#
 FROM alpine:latest
 
 LABEL maintainer "abarthel <abarthel@student.42.fr>"

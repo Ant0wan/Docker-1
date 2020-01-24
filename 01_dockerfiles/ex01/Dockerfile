@@ -1,3 +1,12 @@
+# Build:
+#	docker build -t myts:0 .
+# Usage:
+#	docker run --rm \
+#		--publish 9987:9987/udp \
+#		--publish 10011:10011 \
+#		--publish 30033:30033 \
+#		myts:0 serveradmin_password=Kerrigan
+#
 FROM debian:buster-slim
 
 LABEL maintainer "abarthel <abarthel@student.42.fr>"
