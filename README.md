@@ -1,5 +1,7 @@
 # Docker-1 [![42](https://i.imgur.com/9NXfcit.jpg)](i.imgur.com/9NXfcit.jpg)
 
+[Docker](https://i.imgur.com/r7z0QOR.png?1)
+
 An introduction to **Docker** [a 42 project].
 
 This project aims to learn the very basics of using Docker and Docker-machine.
