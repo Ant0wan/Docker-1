@@ -21,5 +21,6 @@ ONBUILD WORKDIR /opt/app
 
 ONBUILD EXPOSE 3000
 
-#ONBUILD CMD ["rake", "db:migrate"]
-#ONBUILD CMD ["rake", "db:seed"]
+ONBUILD CMD ["rake", "db:seed"]
+
+ONBUILD CMD ["rake", "db:migrate"]
