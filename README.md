@@ -4,7 +4,9 @@
 <img src="https://i.imgur.com/r7z0QOR.png" alt="Docker logo" />
 </p>
 
+<p align="center">
 An introduction to **Docker** [a 42 project].
+</p>
 
 This project aims to learn the very basics of using Docker and Docker-machine.
 
