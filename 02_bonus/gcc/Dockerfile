@@ -1,3 +1,8 @@
+# Build:
+#	docker build -t mygcc:0 .
+# Usage:
+#	docker run --rm -v $PWD:/root mygcc:0 gcc main.c
+#
 FROM buildpack-deps:buster
 
 LABEL maintainer "abarthel <abarthel@student.42.fr>"

@@ -1,3 +1,17 @@
+# Build:
+#	docker build -t mygitlab:0 .
+# Usage:
+#	docker run -it \
+#	  --privileged \
+#	  --hostname 127.0.0.2 \
+#	  --publish 443:443 --publish 80:80 --publish 22:22 \
+#	  --name mygitlab \
+#	  --restart always \
+#	  --volume $PWD/gitlab/config:/etc/gitlab \
+#	  --volume $PWD/gitlab/logs:/var/log/gitlab \
+#	  --volume $PWD/gitlab/data:/var/opt/gitlab \
+#	  mygitlab:0
+#
 FROM ubuntu:bionic
 
 LABEL maintainer "abarthel <abarthel@student.42.fr>"
