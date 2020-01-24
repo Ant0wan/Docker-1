@@ -13,6 +13,10 @@ RUN mkdir /opt/app
 
 COPY ./app /opt/app
 
+WORKDIR /opt/app
+
+RUN bundle install
+
 ONBUILD WORKDIR /opt/app
 
 ONBUILD EXPOSE 3000
