@@ -40,6 +40,20 @@ Introduction to the Docker main options: containers, swarms and services.
 
 - `13` run a wordpress container in background, named "lair", with port 80 bound to host port 8080, using the "spawning-pool" container database.
 
+- `14` run a phpmyadmin container in background, named "roach-warden", with port 80 bound to port 8081 of the host bound to the "spawning-pool" database.
+
+- `15` get "spawning-pool" container’s logs in real time.
+
+- `16` display the "Char" host's currently active containers.
+
+- `17` restart "overlord" container.
+
+- `18` run flask container named "Abathur" with container/host ports 3000 bound.
+
+- `19` create a local swarm on the "Char" host.
+
+- `20`
+
 ### 01_dockerfiles
 
 Introduction to Dockerfile building containers for applications.
