@@ -8,7 +8,7 @@ This project aims to learn the very basics of using Docker and Docker-machine.
 
 ## Description
 
-#### 00_how_to_docker
+### 00_how_to_docker
 
 Introduction to the Docker main options: containers, swarms and services.
 
@@ -22,8 +22,20 @@ Introduction to the Docker main options: containers, swarms and services.
 
 `04` try out docker running a hello-world container.
 
+`05` run an nginx container in background, named "overlord", restarting on its own, with port 80 attached to the port 5000 the "Char" host.
 
-#### 01_dockerfiles
+`06` get the internal IP address of the overlord container.
+
+`07` launch sh in an Apline container.
+
+`08` setup a debian container with build-essentials.
+
+`09` create a volume named "hatchery".
+
+`10` 
+
+
+### 01_dockerfiles
 
 Introduction to Dockerfile building containers for applications.
 
@@ -35,7 +47,7 @@ Introduction to Dockerfile building containers for applications.
 
 `ex03` gitlab-ce container
 
-#### 02_bonus
+### 02_bonus
 
 `install_docker_Debian.sh` script installing Docker on Debian10.
 
