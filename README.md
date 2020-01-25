@@ -36,6 +36,9 @@ Introduction to the Docker main options: containers, swarms and services.
 
 `11` run a mysql container in background named "spawning-pool", restarting on its own in case of error, with mysql root password "Kerrigan" and stored in the hatchery volume in a database named zerglings.
 
+`12` display environment variables the "spawning-pool".
+
+`13` run a wordpress container in background, named "lair", with port 80 bound to host port 8080, using the "spawning-pool" container database.
 
 ### 01_dockerfiles
 
