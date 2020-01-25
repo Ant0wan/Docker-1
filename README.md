@@ -32,7 +32,9 @@ Introduction to the Docker main options: containers, swarms and services.
 
 `09` create a volume named "hatchery".
 
-`10` 
+`10` list volumes.
+
+`11` run a mysql container in background named "spawning-pool", restarting on its own in case of error, with mysql root password "Kerrigan" and stored in the hatchery volume in a database named zerglings.
 
 
 ### 01_dockerfiles
