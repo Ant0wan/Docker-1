@@ -54,17 +54,17 @@ Introduction to Dockerfile building containers for applications.
 
 ### 02_bonus
 
-- `install_docker_Debian.sh` script installing Docker on Debian10.
+- `install_docker_Debian.sh` a script installing Docker on Debian10.
 
-- `install_docker-machine_MacOS.sh` script installing Docker-machine on MacOS.
+- `install_docker-machine_MacOS.sh` a script installing Docker-machine on MacOS (deprecated).
 
-- `darlinghq` darlinghq dockerfile for compiling and executing macos binaries.
+- `darlinghq` a DarlingHQ dockerfile for compiling (need Xcode) and executing MacOS binaries.
 
-- `python` python3 dockerfile for running python programs.
+- `python` a Python3 dockerfile for running Python programs.
 
-- `gcc` gcc dockerfile for compiling C programs.
+- `gcc` a GCC dockerfile for compiling C programs.
 
-- `lynx` lynx terminal web browser in a container.
+- `lynx` a lynx terminal web browser in a container.
 
 ---
 
