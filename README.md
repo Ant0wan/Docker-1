@@ -12,59 +12,59 @@ This project aims to learn the very basics of using Docker and Docker-machine.
 
 Introduction to the Docker main options: containers, swarms and services.
 
-`00` create a virtual machine (host) with docker-machine using the virtualbox driver and name it "Char".
+- `00` create a virtual machine (host) with docker-machine using the virtualbox driver and name it "Char".
 
-`01` get the IP address of the "Char" virtual machine (host).
+- `01` get the IP address of the "Char" virtual machine (host).
 
-`02` set the Docker environment variables related to the "Char" docker-machine deamon (host).
+- `02` set the Docker environment variables related to the "Char" docker-machine deamon (host).
 
-`03` pull hello-world container image from offical repository.
+- `03` pull hello-world container image from offical repository.
 
-`04` try out docker running a hello-world container.
+- `04` try out docker running a hello-world container.
 
-`05` run an nginx container in background, named "overlord", restarting on its own, with port 80 attached to the port 5000 the "Char" host.
+- `05` run an nginx container in background, named "overlord", restarting on its own, with port 80 attached to the port 5000 the "Char" host.
 
-`06` get the internal IP address of the overlord container.
+- `06` get the internal IP address of the overlord container.
 
-`07` launch sh in an Apline container.
+- `07` launch sh in an Apline container.
 
-`08` setup a debian container with build-essentials.
+- `08` setup a debian container with build-essentials.
 
-`09` create a volume named "hatchery".
+- `09` create a volume named "hatchery".
 
-`10` list volumes.
+- `10` list volumes.
 
-`11` run a mysql container in background named "spawning-pool", restarting on its own in case of error, with mysql root password "Kerrigan" and stored in the hatchery volume in a database named zerglings.
+- `11` run a mysql container in background named "spawning-pool", restarting on its own in case of error, with mysql root password "Kerrigan" and stored in the hatchery volume in a database named zerglings.
 
-`12` display environment variables the "spawning-pool".
+- `12` display environment variables the "spawning-pool".
 
-`13` run a wordpress container in background, named "lair", with port 80 bound to host port 8080, using the "spawning-pool" container database.
+- `13` run a wordpress container in background, named "lair", with port 80 bound to host port 8080, using the "spawning-pool" container database.
 
 ### 01_dockerfiles
 
 Introduction to Dockerfile building containers for applications.
 
-`ex00` vim container
+- `ex00` a vim container dockerfile.
 
-`ex01` teamspeak server container
+- `ex01` a teamspeak server container dockerfile.
 
-`ex02` ruby on rail app container
+- `ex02` a ruby on rail app container with a script to build ruby on rails app.
 
-`ex03` gitlab-ce container
+- `ex03` a gitlab-ce container dockerfile.
 
 ### 02_bonus
 
-`install_docker_Debian.sh` script installing Docker on Debian10.
+- `install_docker_Debian.sh` script installing Docker on Debian10.
 
-`install_docker-machine_MacOS.sh` script installing Docker-machine on MacOS.
+- `install_docker-machine_MacOS.sh` script installing Docker-machine on MacOS.
 
-`darlinghq` darlinghq dockerfile for compiling and executing macos binaries.
+- `darlinghq` darlinghq dockerfile for compiling and executing macos binaries.
 
-`python` python3 dockerfile for running python programs.
+- `python` python3 dockerfile for running python programs.
 
-`gcc` gcc dockerfile for compiling C programs.
+- `gcc` gcc dockerfile for compiling C programs.
 
-`lynx` lynx terminal web browser in a container.
+- `lynx` lynx terminal web browser in a container.
 
 ---
 
@@ -84,9 +84,11 @@ Introduction to Dockerfile building containers for applications.
 git clone https://github.com/Ant0wan/Docker-1 && cd Docker-1/
 ```
 
-(option) If you are using Debian (amd64):
+## Install (optionnal)
 
-- Run script to install Docker
+If you are using Debian (amd64):
+
+- Run script as root to install Docker
 
 ```shell=
 bash --posix 02_bonus/install_docker_Debian.sh
