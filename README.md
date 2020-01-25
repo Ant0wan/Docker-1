@@ -64,7 +64,21 @@ Introduction to the Docker main options: containers, swarms and services.
 
 - `25` run a 42school/engineering-bay service in 2 replicas, named "engineering-bay" on the "overmind" network.
 
-- `26`
+- `26` display "engineering-bay" service's real-time logs.
+
+- `27` run a 42school/marine-squad service in 2 replicas, named "marines" on the "overmind" network.
+
+- `28` display all marines services' tasks.
+
+- `29` scale up "marines" services to 20.
+
+- `30` force quit and delete all services on the local swarm.
+
+- `31` force quit and delete all containers.
+
+- `32` delete all container images stored by the "Char" host.
+
+- `33` delete "Aiur" host.
 
 ### 01_dockerfiles
 
