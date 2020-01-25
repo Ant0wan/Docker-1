@@ -12,6 +12,17 @@ This project aims to learn the very basics of using Docker and Docker-machine.
 
 Introduction to the Docker main options: containers, swarms and services.
 
+`00` create a virtual machine (host) with docker-machine using the virtualbox driver and name it "Char".
+
+`01` get the IP address of the "Char" virtual machine (host).
+
+`02` set the Docker environment variables related to the "Char" docker-machine deamon (host).
+
+`03` pull hello-world container image from offical repository.
+
+`04` try out docker running a hello-world container.
+
+
 #### 01_dockerfiles
 
 Introduction to Dockerfile building containers for applications.
