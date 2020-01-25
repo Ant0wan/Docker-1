@@ -12,7 +12,7 @@ This project aims to learn the very basics of using Docker and Docker-machine.
 
 Introduction to the Docker main options: containers, swarms and services.
 
-- `00` create a virtual machine (host) with docker-machine using the virtualbox driver and name it "Char".
+- `00` create a virtual machine (host) with docker-machine using the VirtualBox driver and name it "Char".
 
 - `01` get the IP address of the "Char" virtual machine (host).
 
@@ -52,7 +52,19 @@ Introduction to the Docker main options: containers, swarms and services.
 
 - `19` create a local swarm on the "Char" host.
 
-- `20`
+- `20` create a host using VirtualBox driver and named "Aiur".
+
+- `21` set "Aiur" as slave of the local "Char" host leader's swarm.
+
+- `22` create an overlay-type internal network named "overmind".
+
+- `23` start a rabbitmq service named "orbital-command" with set user and set password, and working ont the "overmind" network.
+
+- `24` list all local swarm services.
+
+- `25` run a 42school/engineering-bay service in 2 replicas, named "engineering-bay" on the "overmind" network.
+
+- `26`
 
 ### 01_dockerfiles
 
