@@ -32,9 +32,11 @@ Introduction to Dockerfile building containers for applications.
 
 `darlinghq` darlinghq dockerfile for compiling and executing macos binaries.
 
-`go` go dockerfile for writing, compiling and running go programs.
+`python` python3 dockerfile for running python programs.
 
 `gcc` gcc dockerfile for compiling C programs.
+
+`lynx` lynx terminal web browser in a container.
 
 ---
 
