@@ -3,7 +3,6 @@
 # Usage:
 #	docker run -it \
 #	  --privileged \
-#	  --hostname 127.0.0.2 \    # Optionnal
 #	  --publish 8443:443 --publish 8080:80 --publish 8022:22 \
 #	  --name mygitlab \
 #	  --restart always \
