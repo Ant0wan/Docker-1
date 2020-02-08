@@ -3,7 +3,7 @@
 # Usage:
 #	docker run --rm -v $PWD:/root/latex latex:0 pdflatex cv.tex
 #
-FROM alpine:latest
+FROM alpine:edge
 
 LABEL maintainer "abarthel <abarthel@student.42.fr>"
 
@@ -11,7 +11,7 @@ RUN apk update
 
 RUN apk upgrade
 
-RUN apk add latex
+RUN apk add texlive
 
 RUN mkdir /root/latex
 
