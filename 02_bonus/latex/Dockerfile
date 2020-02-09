@@ -3,15 +3,15 @@
 # Usage:
 #	docker run --rm -v $PWD:/root/latex latex:0 pdflatex cv.tex
 #
-FROM alpine:edge
+FROM ubuntu:bionic
 
 LABEL maintainer "abarthel <abarthel@student.42.fr>"
 
-RUN apk update
+RUN apt-get update
 
-RUN apk upgrade
+RUN apt-get install -y texlive texlive-formats-extra
 
-RUN apk add texlive
+RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /root/latex
 
